@@ -54,7 +54,7 @@
                 </tr>
                 <tr>
                     <td style="text-align:center">
-                        <asp:Label ID="lblMsgLogin" Text="Ingresa tu Usuario y Contraseña, y presiona ENTRAR" runat="server" Font-Bold="true" Font-Size="X-Large" />
+                        <asp:Label ID="lblMsgLogin" Text="Ingresa tu usuario y contraseña, y presiona enter" runat="server" Font-Bold="true" Font-Size="X-Large" />
                     </td>
                 </tr>
             </table>
@@ -79,7 +79,7 @@
                 </tr>
                 <tr>
                     <td colspan="4" style="text-align:right">
-                        <asp:Label ID="lblAdmin" Text="Si eres Administrador usa este Botón para Ingresar " runat="server"  Font-Bold="true" Font-Size="Large" />
+                        <asp:Label ID="lblAdmin" Text="Si eres administrador usa este botón para acceder" runat="server"  Font-Bold="true" Font-Size="Large" />
                     </td>
                     <td style="text-align:center">
                         <asp:ImageButton ID="btnEntrarAdmin" ImageUrl="~/imagenes/entrar.png" runat="server" />
