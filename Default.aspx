@@ -185,7 +185,7 @@
                     <td>
         
                         <asp:DropDownList ID="ddlTipoDocU" runat="server" Font-Bold="true" Font-Size="X-Large" ForeColor="White" BackColor="#382858" Height="28px" Width="279px">
-                            <asp:ListItem Value="DNI" Text="Doc. Nacional de Identidad" />
+                            <asp:ListItem Value="DNI" Text="Documento Nacional de Identidad" />
                             <asp:ListItem Value="LC" Text="Libreta Cívica" />
                             <asp:ListItem Value="LE" Text="Libreta de Enrolamiento" />
                         </asp:DropDownList>
@@ -195,7 +195,7 @@
                 </tr>
                 <%--Campos y Validacion Numero de Doc.--%>
                 <tr>
-                    <td>Nº de Doc. (sin puntos ni espacios):</td>
+                    <td>DNI:</td>
                     <td>
                       <asp:TextBox ID="txtDocU" runat="server" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="#382858" MaxLength="8" Width="262px" />
                     </td>
@@ -216,7 +216,7 @@
                 </tr>
                 <%--Campos y Validacion Email.--%>
                 <tr>
-                    <td>Email Válido para Notificaciones:</td>
+                    <td>Email:</td>
                     <td>
                       <asp:TextBox ID="txtEmailU" runat="server" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="#382858" MaxLength="70" Width="262px" Rows="2" TextMode="MultiLine" />
                     </td>
@@ -311,7 +311,7 @@
                 </tr>
                 <%--Campos y Validacion Repetir Contraseña--%>
                 <tr>
-                    <td>Repetir Contraseña:</td>
+                    <td>Repetir contraseña:</td>
                     <td>
                       <asp:TextBox ID="txtClaveRepeatU" runat="server" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="#382858" MaxLength="10" Width="262px" TextMode="Password" />
                     </td>
