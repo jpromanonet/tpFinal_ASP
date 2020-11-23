@@ -368,7 +368,7 @@
                 <tr>
                     <td style="text-align:center">
                         <asp:ImageButton ID="btnAhoraQueHago" ImageUrl="~/imagenes/ahora_que_hago.png" runat="server" />
-                        <p>Aca podes administrar tu perfil de usuarios.</p>
+                        <p>Aca podes gestionar tu perfil.</p>
                     </td>
                 </tr>
                 <tr>
@@ -423,9 +423,9 @@
                 </tr>
                 <tr>
                     <td style="text-align:justify">
-                        <p>Sistema de Pedidos Online </p>
+                        <p>Pedidos Online </p>
                         <p></p>
-                        <p>A través de este Sistema, vas a poder comprar los equipos informáticos más innovadores hasta el día de hoy; vas a poder encontrar confianza, calidad y sobre todo el mejor precio para equipos de primer nivel. </p>
+                        <p>Acá vas a poder comprar los equipos informáticos más innovadores hasta el día de hoy.</p>
                     </td>
                 </tr>
                 <tr>
@@ -441,7 +441,7 @@
             <table style="width: 100%">
                 <%--Campos y Validacion Email.--%>
                 <tr>
-                    <td>Email Válido para Notificaciones:</td>
+                    <td>Email:</td>
                     <td>
                         <asp:TextBox ID="txtEmailUedit" runat="server" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="#382858" MaxLength="70" Width="262px" Rows="2" TextMode="MultiLine" />
                     </td>
@@ -505,7 +505,7 @@
                 </tr>
                 <%--Campos y Validacion Telefono--%>
                 <tr>
-                    <td>Teléfono (agregue carateristica):</td>
+                    <td>Teléfono</td>
                     <td>
                         <asp:TextBox ID="txtTelefonoUedit" runat="server" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="#382858" MaxLength="25" Width="262px" />
                     </td>
@@ -565,7 +565,7 @@
                 </tr>
                 <tr style="text-align: center">
                     <td>
-                        <asp:Label ID="lblDatosModificadosOk" Text="Tus Datos han sido Modificados Correctamente" runat="server" Font-Bold="true" Font-Size="Large" ForeColor="#000000" />
+                        <asp:Label ID="lblDatosModificadosOk" Text="Se han actualizado tus datos con exito." runat="server" Font-Bold="true" Font-Size="Large" ForeColor="#000000" />
 
                     </td>
                 </tr>
@@ -582,7 +582,7 @@
             <table style="width: 100%">
                 <tr style="text-align: left">
                     <td>
-                        <h1>Menú de Pedidos</h1>
+                        <h1>Carritos de compras</h1>
                     </td>
                 </tr>                
                 <tr style="text-align: center">
@@ -617,7 +617,7 @@
             <table style="width: 100%">
                 <tr style="text-align: left">
                     <td colspan="4">
-                        <h1>Nuevo de Pedido a Fábrica o Proveedor</h1>
+                        <h1>Solicitar al proveedor</h1>
                     </td>
                 </tr>                
                 <tr>
@@ -629,12 +629,12 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4">Seleccione el Producto</td>
+                    <td colspan="4">Seleccione el producto</td>
                 </tr>
                 <tr>
                     <td colspan="4">
                         <asp:DropDownList ID="ddlProducto" runat="server" Font-Bold="true" Font-Size="X-Large" ForeColor="White" BackColor="Black" Width="85%" AutoPostBack="True">
-                            <asp:ListItem Value="0" Text="Sin Enlazar" />
+                            <asp:ListItem Value="0" Text="Sin enlazar" />
                         </asp:DropDownList>
                     </td>
                 </tr>
@@ -674,7 +674,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4">Esta es la Lista de su Pedido.</td>
+                    <td colspan="4">Su carrito de compras.</td>
                 </tr>
                 <tr style="text-align: center">
                     <td colspan="4">
@@ -838,7 +838,7 @@
             <table style="width: 100%">
                 <tr style="text-align: center">
                     <td>
-                        <h1>Menu ABM Productos</h1>
+                        <h1>ABM Productos</h1>
                     </td>
                 </tr>                
                 <tr style="text-align: center">
@@ -956,7 +956,7 @@
                     <td>
                         <asp:DropDownList ID="ddlCategoria" runat="server" Font-Bold="true" Font-Size="X-Large" ForeColor="White" BackColor="#382858" Width="276px">
                             <asp:ListItem Value="Seleccionar" Text="Seleccionar" />
-                           <asp:ListItem Value="1" Text="Mothers y Micros" />
+                            <asp:ListItem Value="1" Text="Mothers y Micros" />
                             <asp:ListItem Value="2" Text="Almacenamietnto" />
                             <asp:ListItem Value="3" Text="Placas" />
                             <asp:ListItem Value="4" Text="Gabinetes y Coolers" />
