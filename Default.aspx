@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Sistema</title>
+    <title>Sistema de Altas. Bajas y Modificaciones</title>
     <style>
         #form1{
             width:767px;
@@ -368,7 +368,7 @@
                 <tr>
                     <td style="text-align:center">
                         <asp:ImageButton ID="btnAhoraQueHago" ImageUrl="~/imagenes/ahora_que_hago.png" runat="server" />
-                        <p>Desde acá vas a poder hacer varias cosas relacionadas con tu cuenta en BAUBYTE</p>
+                        <p>Aca podes administrar tu perfil de usuarios.</p>
                     </td>
                 </tr>
                 <tr>
@@ -418,12 +418,12 @@
             <table style="width: 100%">
                 <tr>
                     <td style="text-align: center">
-                        <asp:Label ID="lblTeCuento" Text="Te Cuento un Poco" runat="server" Font-Bold="true" Font-Size="Large" ForeColor="#000000" />
+                        <asp:Label ID="lblTeCuento" Text="Un poco de info" runat="server" Font-Bold="true" Font-Size="Large" ForeColor="#000000" />
                     </td>
                 </tr>
                 <tr>
                     <td style="text-align:justify">
-                        <p>Sistema de Pedidos Online BAUBYTE</p>
+                        <p>Sistema de Pedidos Online </p>
                         <p></p>
                         <p>A través de este Sistema, vas a poder comprar los equipos informáticos más innovadores hasta el día de hoy; vas a poder encontrar confianza, calidad y sobre todo el mejor precio para equipos de primer nivel. </p>
                     </td>
