@@ -210,9 +210,9 @@ Public Class _Default
         Session("codigo") = codigo
         Dim mensaje As String, en As String = Chr(13) & Chr(10)
 
-        mensaje = "Saludos " & Session("ApellidoYNombre") & "." & en & en & "Te escribimos de BAUBYTE, Equipamientos Informaticos, respuesta a tu solicitud de registro como un nuevo usuario de nuestr aplicación. " & en & en & "Por favor, ingresa el código: " & codigo & " en el cuadro de texto de la aplicación Web y presioná Validar. Esto completara tu registro como un Nuevo Usuario de BAUBYTE, Equipamientos Informaticos." & en & en & "Felicitaciones" & en & en & "El Equipo de BAUBYTE, Equipamientos Informaticos" & en & en & en & en & "(Por favor, no respondas éste mail, es automático... Muchas Gracias.)" & en & en
+        mensaje = "Saludos " & Session("ApellidoYNombre") & "." & en & en & "Te escribimos de sistema ABM, Equipamientos Informaticos, respuesta a tu solicitud de registro como un nuevo usuario de nuestra aplicación. " & en & en & "Por favor, ingresa el código: " & codigo & " en el cuadro de texto de la aplicación Web y presioná Validar. Esto completara tu registro como un Nuevo Usuario de , Equipamientos Informaticos." & en & en & "Felicitaciones" & en & en & "El Equipo de , Equipamientos Informaticos" & en & en & en & en & "(Por favor, no respondas éste mail, es automático... Muchas Gracias.)" & en & en
 
-        Dim okEnviarMail As String = enviarMail(Session("Email"), "BAUBYTE, Validar Email", mensaje)
+        Dim okEnviarMail As String = enviarMail(Session("Email"), ", Validar Email", mensaje)
 
         txtValidar.Text = ""
         lblErrorCodidoValidar.Visible = False
@@ -1448,7 +1448,7 @@ Public Class _Default
         Dim mail As New MailMessage()
         Try
             mail = New MailMessage()
-            mail.From = New MailAddress(Email, "BAUBYTE")
+            mail.From = New MailAddress(Email, "")
             mail.To.Add(emailDestino)
             mail.Subject = subjet
             mail.Body = mensaje
@@ -1497,8 +1497,8 @@ Public Class _Default
         emailEnviar = dataSet.Tables("recuperar").Rows(0)("Email").ToString.Trim.ToLower
         claveEnviar = dataSet.Tables("recuperar").Rows(0)("Clave").ToString.Trim
         usuarioEnviar = dataSet.Tables("recuperar").Rows(0)("nombre_apellido").ToString.Trim
-        mensaje = "Hola " & usuarioEnviar & "," & enter & "Te escribimos desde BAUBYTE, respondiendo a tu pedido de Recuperación de Clave" & enter & enter & "Su Usuario es: " & usuario & enter & "Su Clave es: " & claveEnviar & enter & enter & "Ya podes volver a Entrar y Armar tus Pedidos" & enter & "Saludos desde BAUBYTE" & enter & enter & enter & enter & "(Por Favor no Responda esté Email, es automático. Gracias.)" & enter & enter
-        Dim ok As String = enviarMail(emailEnviar, "BAUBYTE, Recuperación de Clave", mensaje)
+        mensaje = "Hola " & usuarioEnviar & "," & enter & "Te escribimos desde , respondiendo a tu pedido de Recuperación de Clave" & enter & enter & "Su Usuario es: " & usuario & enter & "Su Clave es: " & claveEnviar & enter & enter & "Ya podes volver a Entrar y Armar tus Pedidos" & enter & "Saludos desde " & enter & enter & enter & enter & "(Por Favor no Responda esté Email, es automático. Gracias.)" & enter & enter
+        Dim ok As String = enviarMail(emailEnviar, ", Recuperación de Clave", mensaje)
         If ok = "OK" Then
             lblReenviarClave.Text = "**** Te Eviamos un Email Por Tu Clave."
         Else
@@ -1599,7 +1599,7 @@ Public Class _Default
                     lblErroresProductoEdit.Visible = True
                     Exit Sub
                 End If
-                enviarMail(email, "BAUBYTE, Usuario Eliminado", mensaje)
+                enviarMail(email, ", Usuario Eliminado", mensaje)
             Case "Desactivar"
                 If SqlAccion(queryDesactivar) = False Then
                     lblErrorMotivo.Text = "Se ha producido un error al querer guardar tus datos."
@@ -1613,7 +1613,7 @@ Public Class _Default
                     lblErrorMotivo.Visible = True
                     Exit Sub
                 End If
-                enviarMail(email, "BAUBYTE, Usuario Administrador", mensaje)
+                enviarMail(email, ", Usuario Administrador", mensaje)
         End Select
         pnlMotivo.Visible = False
         pnlAbmUsuariosMenu.Visible = True
@@ -1657,9 +1657,9 @@ Public Class _Default
         Session("idUsuario") = Vnum(LeeUnCampo("SELECT TOP 1 idUsuario FROM usuarios WHERE Usuario='" & Session("Usuario") & "'and Clave='" & Session("Password") & "' ", "idUsuario"))
 
         Dim mensaje As String, xusuario As String = Session("ApellidoYNombre"), en As String = Chr(13) & Chr(10)
-        mensaje = "Bienvenido " & xusuario & " a BAUBYTE, Equipamientos Informaticos." & en & en & "Te damos una cordial Bienvenida a BAUBYTE." & en & en & "Tu usuario es " & " " & Session("Usuario") & " " & en & en & "Tu clave es " & " " & Session("Password") & " " & en & en & "Ya podés loguearte para ver tus datos! !." & en & en
+        mensaje = "Bienvenido " & xusuario & " a , Equipamientos Informaticos." & en & en & "Te damos una cordial Bienvenida a ." & en & en & "Tu usuario es " & " " & Session("Usuario") & " " & en & en & "Tu clave es " & " " & Session("Password") & " " & en & en & "Ya podés loguearte para ver tus datos! !." & en & en
 
-        Dim okEnviarMail As String = enviarMail(Session("Email"), "BAUBYTE, Registro de Usuario", mensaje)
+        Dim okEnviarMail As String = enviarMail(Session("Email"), ", Registro de Usuario", mensaje)
         If okEnviarMail = "OK" Then
             lblBienvenido.Text = "Bienvenido " & Session("ApellidoYNombre") & "!!!" & en & en & "Te Eviamos un Email con Todos tus Datos."
         Else
